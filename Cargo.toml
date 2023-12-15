@@ -1,0 +1,12 @@
+[package]
+name = "bsreplay2vmc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lzma-rs = "*"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = "symbols"
