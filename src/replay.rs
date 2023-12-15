@@ -29,9 +29,9 @@ fn read_transform(r: &mut impl io::Read) -> io::Result<pose::Transform> {
 }
 
 pub fn load(r: &mut impl io::BufRead) -> Result<Vec<pose::Keyframe>, Box<dyn error::Error>> {
-    let mut header = [0; 28];
-    r.read_exact(&mut header)?;
-    if header[0..4] == [93, 0, 0, 128] {
+    let mut magic = [0; 28];
+    r.read_exact(&mut magic)?;
+    if magic[0..4] == [93, 0, 0, 128] {
         return Err("Legacy format".into());
     }
     let mut decompressed: Vec<u8> = Vec::new();

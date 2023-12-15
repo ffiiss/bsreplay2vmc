@@ -2,8 +2,8 @@ mod osc;
 mod pose;
 mod replay;
 mod vmc;
-use std::*;
 use std::io::Write;
+use std::*;
 
 fn median(it: impl iter::Iterator<Item = f32>) -> f32 {
     let mut xs: Vec<f32> = it.collect();
