@@ -10,7 +10,7 @@ ScoreSaber のリプレイファイルを読み込み、 [VirtualMotionCapture](
 
 2. VirtualMotionCapture を起動し、 VMC プロトコルの受信を有効にします。
 
-3,. `bsreplay2vmc.exe` にリプレイファイルをドラッグ & ドロップするか、コマンドラインで引数に与えて起動してください。複数ファイル指定も可能です。
+3. `bsreplay2vmc.exe` にリプレイファイルをドラッグ & ドロップするか、コマンドラインで引数に与えて起動してください。複数ファイル指定も可能です。
 
 自分のリプレイファイルはたとえば `C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/UserData/ScoreSaber/Replays/` にあります。 ScoreSaber のデータは `https://scoresaber.com/game/replays/[Song ID]-[Player ID].dat` に存在し…たと思うのですが、いま確認したらこの URL はなくなっている気がします。
 
